@@ -8,9 +8,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (_req: Request, res: Response) => {
-  res.send('Hello World');
+  res.send('Hello World123');
 });
 
 app.listen(port, () => {
-  console.log('Server is running');
+  console.log(`Server is running on port ${port}`);
 });

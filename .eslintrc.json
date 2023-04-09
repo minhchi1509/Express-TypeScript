@@ -54,6 +54,8 @@
     "no-unneeded-ternary": "error",
     "no-useless-rename": "error",
     "no-throw-literal": "error",
+    "no-new": "error",
+    "no-useless-return": "error",
     "object-shorthand": "error",
     "operator-assignment": "error",
     "prefer-destructuring": "error",

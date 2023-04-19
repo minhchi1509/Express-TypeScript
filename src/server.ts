@@ -1,8 +1,9 @@
-import express, { Application, Request, Response } from 'express';
+import express, { Application } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
-import mongoose from 'mongoose';
+import sequelize from '@/configs/sequelize.config';
+import customerRoute from './routes/customer.route';
 
 const app: Application = express();
 const port = 8080;
@@ -14,11 +15,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 (async () => {
-  await mongoose.connect(process.env.MONGODB_URL as string);
-  console.log('Successfully connected to MongoDB');
-})().catch(() => {
-  console.log('Failed to connect to MongoDB.');
-});
+  try {
+    await sequelize.authenticate();
+    console.log('Connect to MySQL successfully');
+  } catch (error) {
+    console.log('Failed to connect to MySQL');
+  }
+})();
+
+app.use('/api/v1/customer', customerRoute);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

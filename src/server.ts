@@ -24,6 +24,7 @@ app.use(cookieParser());
 app.use('/api/v1/customer', customerRoute);
 
 void sequelize.sync();
+
 app.listen(env.PORT, () => {
   console.log(`Server is running on port ${env.PORT}`);
 });

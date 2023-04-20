@@ -1,14 +1,12 @@
 import express, { Application } from 'express';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 import sequelize from '@/configs/sequelize.config';
 import customerRoute from './routes/customer.route';
+import env from './configs/env.config';
 
 const app: Application = express();
-const port = 8080;
 
-dotenv.config();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -25,6 +23,7 @@ app.use(cookieParser());
 
 app.use('/api/v1/customer', customerRoute);
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+void sequelize.sync();
+app.listen(env.PORT, () => {
+  console.log(`Server is running on port ${env.PORT}`);
 });

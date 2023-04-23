@@ -1,10 +1,11 @@
 import {
-  Model,
-  DataTypes,
   CreationOptional,
+  DataTypes,
   InferAttributes,
-  InferCreationAttributes
+  InferCreationAttributes,
+  Model
 } from 'sequelize';
+
 import sequelize from '@/configs/sequelize.config';
 
 interface ICustomer

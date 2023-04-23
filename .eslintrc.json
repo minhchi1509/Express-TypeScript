@@ -13,7 +13,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "simple-import-sort"],
   "settings": {
     "import/resolver": {
       "node": {
@@ -168,6 +168,8 @@
     "import/first": "error",
     "import/group-exports": "error",
     "import/newline-after-import": "error",
-    "import/no-anonymous-default-export": "error"
+    "import/no-anonymous-default-export": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   }
 }

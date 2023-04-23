@@ -1,5 +1,5 @@
+import { NextFunction, Request, Response } from 'express';
 import { param, validationResult } from 'express-validator';
-import { Request, Response, NextFunction } from 'express';
 
 const idParamValidation = [
   param('id')

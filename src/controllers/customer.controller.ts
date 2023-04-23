@@ -1,5 +1,6 @@
-import { Response, Request } from 'express';
+import { Request, Response } from 'express';
 import { validationResult } from 'express-validator';
+
 import CustomerModel, { ICustomer } from '@/models/customer.model';
 
 const customerController = {

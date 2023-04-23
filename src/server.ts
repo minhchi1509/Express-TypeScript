@@ -1,9 +1,11 @@
-import express, { Application } from 'express';
-import cors from 'cors';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import express, { Application } from 'express';
+
 import sequelize from '@/configs/sequelize.config';
-import customerRoute from './routes/customer.route';
+
 import env from './configs/env.config';
+import customerRoute from './routes/customer.route';
 
 const app: Application = express();
 

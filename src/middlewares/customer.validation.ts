@@ -1,4 +1,5 @@
 import { body } from 'express-validator';
+
 import CustomerModel from '@/models/customer.model';
 
 const customerValidation = [

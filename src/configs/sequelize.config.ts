@@ -1,4 +1,5 @@
 import { Sequelize } from 'sequelize';
+
 import env from './env.config';
 
 const sequelize = new Sequelize({

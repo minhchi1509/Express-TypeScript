@@ -1,4 +1,5 @@
 import { Router } from 'express';
+
 import customerController from '@/controllers/customer.controller';
 import customerValidation from '@/middlewares/customer.validation';
 import idParamValidation from '@/middlewares/idParam.validation';

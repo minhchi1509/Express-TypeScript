@@ -51,7 +51,7 @@ const CustomerModel = sequelize.define<ICustomer>(
     }
   },
   {
-    tableName: 'users',
+    tableName: 'customers',
     timestamps: true
   }
 );

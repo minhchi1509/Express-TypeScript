@@ -3,7 +3,7 @@
     "strict": true,
     "target": "ESNext",
     "module": "CommonJS",
-    "outDir": "build",
+    "outDir": "dist",
     "baseUrl": "src/",
     "moduleResolution": "node",
     "resolveJsonModule": true,

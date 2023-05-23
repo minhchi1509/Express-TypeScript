@@ -1,5 +1,5 @@
-const onlyInMainBranch = () => {
+const chiController = () => {
   return 'onlyInMainBranch123';
 };
 
-export default onlyInMainBranch;
+export default chiController;

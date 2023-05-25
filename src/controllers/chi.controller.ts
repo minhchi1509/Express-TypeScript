@@ -1,4 +1,4 @@
-const chiController = () => {
-  return 'onlyInMainBranch123';
+const wrongCodeOnBranchMain = () => {
+  return 'wrongCodeOnBranchMain';
 };
-export default chiController;
+export default wrongCodeOnBranchMain;

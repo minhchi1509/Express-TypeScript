@@ -65,8 +65,8 @@ const customerController = {
       res.status(500).json(error);
     }
   },
-  handleFileChange: () => {
-    console.log('File change');
+  xMain: () => {
+    console.log('XMain now here hahahaha!');
   }
 };
 

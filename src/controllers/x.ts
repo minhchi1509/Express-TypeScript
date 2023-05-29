@@ -1,3 +1,3 @@
-const xMain = () => {
-  console.log('xMain and dont change that');
+export const xMain = () => {
+  console.log('xMain and dont change that. Remember that');
 };

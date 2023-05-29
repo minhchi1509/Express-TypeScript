@@ -1,5 +1,5 @@
-const yNotifications = () => {
-  console.log('yNotifications');
+const YMain = () => {
+  console.log('YMain and remember not to change that..........');
 };
 
-export default yNotifications;
+export default YMain;

@@ -1,3 +1,3 @@
-const xNotifications = () => {
-  console.log('xNotifications');
+const xMain = () => {
+  console.log('xMain and dont change that');
 };

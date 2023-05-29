@@ -65,8 +65,8 @@ const customerController = {
       res.status(500).json(error);
     }
   },
-  xMain: () => {
-    console.log('XMain now here hahahaha!');
+  yMain: () => {
+    console.log('Now I am YMain, not XMain like previous');
   }
 };
 

@@ -10,6 +10,10 @@ const customerController = {
     } catch (error) {
       res.status(500).json(error);
     }
+  },
+
+  stillWorkingOnTestBranch1: () => {
+    console.log('stillWorkingOnTestBranch1');
   }
 };
 

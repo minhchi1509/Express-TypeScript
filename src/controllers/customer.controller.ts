@@ -65,8 +65,9 @@ const customerController = {
       res.status(500).json(error);
     }
   },
-  yMain: () => {
-    console.log('Now I am YMain, not XMain like previous');
+
+  truncateString: (value: string) => {
+    return value.substring(0, 10);
   }
 };
 

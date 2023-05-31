@@ -67,6 +67,10 @@ const customerController = {
   },
   yMain: () => {
     console.log('Now I am YMain, not XMain like previous');
+  },
+
+  splitString: (values: string) => {
+    return values.split('-');
   }
 };
 

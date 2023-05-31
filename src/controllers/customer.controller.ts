@@ -64,10 +64,6 @@ const customerController = {
     } catch (error) {
       res.status(500).json(error);
     }
-  },
-
-  truncateString: (value: string) => {
-    return value.substring(0, 10);
   }
 };
 

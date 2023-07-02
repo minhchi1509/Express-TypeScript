@@ -8,7 +8,7 @@ const customerValidation = [
     .trim()
     .stripLow()
     .notEmpty()
-    .withMessage('Name is required'),
+    .withMessage('Name is requiredd'),
   body('age')
     .escape()
     .trim()

@@ -17,7 +17,7 @@ app.use(cookieParser());
 (async () => {
   try {
     await sequelize.authenticate();
-    console.log('Connect to database successfully');
+    console.log('Connect to database successfullyy');
   } catch (error) {
     console.log('Failed to connect to database');
   }

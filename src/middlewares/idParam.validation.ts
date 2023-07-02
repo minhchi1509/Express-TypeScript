@@ -7,7 +7,7 @@ const idParamValidation = [
     .trim()
     .stripLow()
     .notEmpty()
-    .withMessage('Please provide an ID')
+    .withMessage('Please provide an IDD')
     .isUUID(4)
     .withMessage('Please provide a valid ID'),
 
